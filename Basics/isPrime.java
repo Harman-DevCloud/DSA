@@ -6,7 +6,7 @@ public class isPrime {
         int num = scn.nextInt();
 
         int count = 0;
-        for(int div = 2; div*div < num; div++ ){
+        for(int div = 2; div*div <= num; div++ ){
             if(num % div == 0){
                 count++;
                 break;
