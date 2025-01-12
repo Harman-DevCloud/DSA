@@ -1,28 +1,26 @@
 import java.util.Scanner;
 
-public class inverseOfNo {
+public class ReverseNo {
     public static void main(String[] args) {
         Scanner scn = new Scanner(System.in);
         int n = scn.nextInt();
 
         int count = 0;
         int temp = n;
+        int rev = 0 ;
 
         while(temp != 0){
-            temp /= 10;
+            temp = temp/10;
             count++;
         }
-
-        int rev = 0;
-
-        for(int i = 1; i <= count; i++){
-            int ld = n % 10;
-            n = n / 10;
-
-            rev = rev + i * (int)Math.pow(10, ld - 1);
+        int multi = (int)Math.pow(10,count-1);
+        while(n != 0){
+            int r = n % 10;
+            r = r * multi;
+            rev += r;
+            n = n/10;
+            multi = multi/10;
         }
         System.out.println(rev);
-        }
-
     }
-
+}

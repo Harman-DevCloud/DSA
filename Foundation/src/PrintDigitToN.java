@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class printDigitToN {
+public class PrintDigitToN {
     public static void main(String[] args) {
         Scanner scn = new Scanner(System.in);
         int n = scn.nextInt();

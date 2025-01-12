@@ -1,7 +1,6 @@
-import javax.sound.midi.SysexMessage;
 import java.util.Scanner;
 
-public class fibUptoN {
+public class FibUptoN {
     public static void main(String[] args) {
         Scanner scn = new Scanner(System.in);
         int n = scn.nextInt();

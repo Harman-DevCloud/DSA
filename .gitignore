@@ -1,8 +1,0 @@
-# Ignore everything
-*
-
-# Do not ignore directories, so Git can traverse into them
-!*/
-
-# Do not ignore .java files
-!*.java
