@@ -1,0 +1,10 @@
+# Ignore everything
+*
+
+# Allow specific folders
+!/Arrays/
+!/Foundation/
+
+# Allow files in the root directory
+!.gitignore
+!README.md
